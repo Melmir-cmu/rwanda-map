@@ -3,18 +3,38 @@
 <head>
 <meta charset="UTF-8">
 <title>Discover Rwanda</title>
+
 <style>
-  body { font-family: Arial; text-align: center; }
-  .container { position: relative; display: inline-block; }
-  .map { width: 800px; }
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+
+  .container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .map {
+    width: 900px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
 
   .hotspot {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: red;
+    background: #e53935;
     border-radius: 50%;
     cursor: pointer;
+    border: 2px solid white;
   }
 
   .tooltip {
@@ -25,6 +45,9 @@
     padding: 10px;
     width: 220px;
     font-size: 14px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    text-align: left;
   }
 </style>
 </head>
@@ -35,18 +58,20 @@
 <p>Click on the points to explore key features of Rwanda.</p>
 
 <div class="container">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Rwanda_map_en.png" class="map">
+
+  <!-- IMPORTANT: This must match your uploaded image -->
+  <img src="rwanda-map.png" class="map">
 
   <!-- Rwanda Center -->
-  <div class="hotspot" style="top: 45%; left: 48%;" onclick="show('h1')"></div>
+  <div class="hotspot" style="top: 45%; left: 50%;" onclick="show('h1')"></div>
   <div id="h1" class="tooltip" style="top: 40%; left: 55%;">
     <b>Rwanda</b><br>
     A landlocked country in East-Central Africa.
   </div>
 
   <!-- Borders -->
-  <div class="hotspot" style="top: 15%; left: 50%;" onclick="show('h2')"></div>
-  <div id="h2" class="tooltip" style="top: 10%; left: 55%;">
+  <div class="hotspot" style="top: 20%; left: 50%;" onclick="show('h2')"></div>
+  <div id="h2" class="tooltip" style="top: 15%; left: 55%;">
     <b>Neighboring Countries</b><br>
     Rwanda borders Uganda, Tanzania, Burundi, and DR Congo.
   </div>
@@ -59,8 +84,8 @@
   </div>
 
   <!-- Provinces -->
-  <div class="hotspot" style="top: 55%; left: 65%;" onclick="show('h4')"></div>
-  <div id="h4" class="tooltip" style="top: 60%; left: 70%;">
+  <div class="hotspot" style="top: 60%; left: 65%;" onclick="show('h4')"></div>
+  <div id="h4" class="tooltip" style="top: 65%; left: 70%;">
     <b>Provinces</b><br>
     Rwanda is divided into provinces and districts.
   </div>
