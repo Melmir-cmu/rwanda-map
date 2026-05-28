@@ -10,36 +10,36 @@
     text-align: center;
     background-color: #f5f5f5;
     margin: 0;
-    padding: 10px;
+    padding: 5px;
   }
 
   h2 {
-    margin-top: 10px;
-    font-size: 24px;
+    margin-top: 5px;
+    font-size: 18px;
   }
 
   p {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin-bottom: 8px;
   }
 
   .container {
     position: relative;
     display: inline-block;
     width: 100%;
-    max-width: 650px;
+    max-width: 500px; /* MUCH smaller */
   }
 
   .map {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
   .hotspot {
     position: absolute;
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
     background: #e53935;
     border-radius: 50%;
     cursor: pointer;
@@ -52,11 +52,11 @@
     position: absolute;
     background: white;
     border: 1px solid #ccc;
-    padding: 8px;
-    width: 180px;
-    font-size: 12px;
+    padding: 6px;
+    width: 140px;
+    font-size: 10px;
     border-radius: 6px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
     text-align: left;
     z-index: 10;
   }
@@ -80,29 +80,29 @@
   </div>
 
   <!-- Neighboring Countries -->
-  <div class="hotspot" style="top: 20%; left: 50%;" onclick="show('h2')"></div>
-  <div id="h2" class="tooltip" style="top: 15%; left: 55%;">
+  <div class="hotspot" style="top: 25%; left: 52%;" onclick="show('h2')"></div>
+  <div id="h2" class="tooltip" style="top: 20%; left: 58%;">
     <b>Neighboring Countries</b><br>
     Rwanda borders Uganda, Tanzania, Burundi, and DR Congo.
   </div>
 
   <!-- Kigali -->
-  <div class="hotspot" style="top: 47%; left: 47%;" onclick="show('h3')"></div>
-  <div id="h3" class="tooltip" style="top: 52%; left: 53%;">
+  <div class="hotspot" style="top: 56%; left: 50%;" onclick="show('h3')"></div>
+  <div id="h3" class="tooltip" style="top: 60%; left: 55%;">
     <b>Kigali</b><br>
     The capital and largest city of Rwanda.
   </div>
 
   <!-- Provinces -->
-  <div class="hotspot" style="top: 60%; left: 65%;" onclick="show('h4')"></div>
-  <div id="h4" class="tooltip" style="top: 65%; left: 70%;">
+  <div class="hotspot" style="top: 58%; left: 47%;" onclick="show('h4')"></div>
+  <div id="h4" class="tooltip" style="top: 63%; left: 52%;">
     <b>Provinces</b><br>
     Rwanda is divided into provinces and districts.
   </div>
 
   <!-- Lake Kivu -->
-  <div class="hotspot" style="top: 50%; left: 20%;" onclick="show('h5')"></div>
-  <div id="h5" class="tooltip" style="top: 55%; left: 10%;">
+  <div class="hotspot" style="top: 65%; left: 20%;" onclick="show('h5')"></div>
+  <div id="h5" class="tooltip" style="top: 68%; left: 5%;">
     <b>Lake Kivu</b><br>
     One of Rwanda’s major lakes.
   </div>
